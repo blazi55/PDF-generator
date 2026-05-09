@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff 0%,
+            #f8fafc 100%
+        );
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1450px;
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr;
+
+    gap: 32px;
+}
+
+.leftCard,
+.rightCard {
+
+    border-radius: 28px !important;
+
+    background:
+        rgba(255, 255, 255, 0.85) !important;
+
+    backdrop-filter: blur(14px);
+
+    padding: 36px;
+
+    box-shadow:
+        0 10px 40px rgba(15, 23, 42, 0.08) !important;
+}
+
+.mainTitle {
+
+    font-size: 42px !important;
+
+    font-weight: 700 !important;
+
+    color: #0f172a;
+
+    margin-bottom: 10px !important;
+}
+
+.subtitle {
+
+    font-size: 17px !important;
+
+    color: #64748b;
+
+    margin-bottom: 40px !important;
+}
+
+.descriptionInput {
+
+    width: 100%;
+
+    min-height: 500px;
+
+    border-radius: 20px;
+
+    border: 1px solid #dbeafe;
+
+    padding: 20px;
+
+    font-size: 16px;
+
+    resize: none;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.descriptionInput:focus {
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 5px rgba(37, 99, 235, 0.12);
+}
+
+.settingsTitle {
+
+    font-size: 30px !important;
+
+    font-weight: 700 !important;
+
+    color: #0f172a;
+
+    margin-bottom: 30px !important;
+}
+
+.buttonSection {
+
+    display: flex;
+
+    gap: 16px;
+
+    margin-bottom: 40px;
+}
+
+.saveButton {
+
+    flex: 1;
+
+    height: 56px;
+
+    border-radius: 16px !important;
+
+    font-weight: 700 !important;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #1d4ed8
+        ) !important;
+}
+
+.downloadButton {
+
+    flex: 1;
+
+    height: 56px;
+
+    border-radius: 16px !important;
+
+    font-weight: 700 !important;
+}
+
+.selectSection {
+
+    margin-bottom: 28px;
+}
+
+.infoBox {
+
+    margin-top: 40px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    background:
+        rgba(37, 99, 235, 0.08);
+}
+
+.infoText {
+
+    color: #1e40af;
+
+    line-height: 1.7 !important;
+}
+
+@media (max-width: 1100px) {
+
+    .container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .descriptionInput {
+
+        min-height: 300px;
+    }
+}
